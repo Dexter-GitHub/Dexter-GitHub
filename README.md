@@ -1,5 +1,9 @@
-### Hi there 👋
+### 안녕하세요. 👋 창원에서 Embedded Software 개발자로 활동중인 Dexter 입니다.
 
+* 💬 방산분야 VxWroks 기반 Kernel Module 개발.
+* 💬 STM32/DSP/ATMEGA 등 MCU 펌웨어 개발.
+* 💬 QT/QML Window GUI Application 개발.
+* ⚡ 위와 같은 개발을 주로 하고 있어요 컨택을 원하시면 mystyle1057@naver.com으로 연락주세요.
 <!--
 **Dexter-GitHub/Dexter-GitHub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
