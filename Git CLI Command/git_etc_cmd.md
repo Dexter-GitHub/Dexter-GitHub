@@ -1,4 +1,5 @@
 # GIT 기타 설정 명령어
+</br>
 
 ## Windows 환경에서 Beyound Compare mergetool 환경설정 (Beyond Compare 4)
 </br>
@@ -19,3 +20,20 @@ $ git config --global mergetool.bc.path "C:/Program Files/Beyond Compare 4/BComp
 ```
 $ git mergetool {file name}
 ```
+</br>
+
+## git 원격 저장소 생성 및 remote 등록
+</br>
+
+* git 원격저장소 생성 (저장소 폴더)
+ ```
+$ git init --bare {fold name}
+ ```
+</br>
+
+* git 원격 저장소 등록 (작업 폴더)
+```
+$ git remote add origin {저장소 folder name}
+```
+> origin은 저장소의 별명
+</br>
