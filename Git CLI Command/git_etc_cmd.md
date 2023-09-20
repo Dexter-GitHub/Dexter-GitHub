@@ -9,7 +9,7 @@ Beyound Compare Dowload Link : <https://www.scootersoftware.com/download>
 
 * GIT golbal config 설정
 ```
-$ git config --golbal merge.tool bc
+$ git config --global merge.tool bc
 
-$ git config --golbal mergetool.bc.path "C:/Program Files/Beyond Compare 4/BComp.exe"
+$ git config --global mergetool.bc.path "C:/Program Files/Beyond Compare 4/BComp.exe"
 ```
