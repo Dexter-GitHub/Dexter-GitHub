@@ -1,15 +1,13 @@
 ### 안녕하세요. 👋 창원에서 Embedded Software 개발자로 활동중인 Dexter 입니다.
-
+</br>
 * 💬 방산분야 VxWroks 기반 Kernel Module 개발.
 * 💬 STM32/DSP/ATMEGA 등 MCU 펌웨어 개발.
 * 💬 QT/QML Window GUI Application 개발.
 * ⚡ 위와 같은 개발을 주로 하고 있어요 컨택을 원하시면 mystyle1057@naver.com으로 연락주세요.
-
+</br>
   
 ## My Skill Set  
 <table><tr><td valign="top" width="33%">
-
-
 
 ### Frontend  
 <div align="center">  
@@ -24,9 +22,7 @@
 </div>
 
 </td><td valign="top" width="33%">
-
-
-
+  
 ### Backend  
 <div align="center">  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
@@ -35,8 +31,6 @@
 </div>
 
 </td><td valign="top" width="33%">
-
-
 
 ### DevOps  
 <div align="center">  
@@ -51,7 +45,6 @@
 
 <br/>  
 
-
 ## Connect with me  
 <div align="center">
 <a href="https://github.com/rishavanand" target="_blank">
@@ -63,8 +56,7 @@
 <a href="https://www.youtube.com/user/iamrishavanand" target="_blank">
 <img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
 </a>  
-</div>  
-  
+</div>   
 
 <br/>  
 <!--
