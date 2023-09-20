@@ -22,7 +22,7 @@ $ git mergetool {file name}
 ```
 </br>
 
-## git 원격 저장소 생성 및 remote 등록
+## GIT 원격 저장소 생성 및 remote 등록
 </br>
 
 * git 원격저장소 생성 (저장소 폴더)
@@ -37,3 +37,16 @@ $ git remote add origin {저장소 folder name}
 ```
 > origin은 저장소의 별명
 </br>
+
+## GIT SSH 접속
+</br>
+
+* pc ssh key 생성
+```
+$ ssh-keygen
+```
+> 위 명령어 실행시 표시되는 id_rsa/id_rsa.pub 파일의 경로를 참고 한다.   
+> private key는 local PC에 사용되고, public key는 원격 저장소 Server PC에 사용된다.
+> GitHub 사용시 Setting > SSH and GPG keys에 public key를 등록하여 사용한다.
+</br>
+
