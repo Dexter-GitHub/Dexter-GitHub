@@ -3,7 +3,7 @@
 ## Windows 환경에서 Beyound Compare mergetool 환경설정 (Beyond Compare 4)
 </br>
 
-Beyound Compare Dowload Link : <https://www.scootersoftware.com/download)https://www.scootersoftware.com/download>
+Beyound Compare Dowload Link : <https://www.scootersoftware.com/download>
   
 </br>
 
