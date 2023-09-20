@@ -1,5 +1,6 @@
 ### 안녕하세요. 👋 창원에서 Embedded Software 개발자로 활동중인 Dexter 입니다.
 </br>
+
 * 💬 방산분야 VxWroks 기반 Kernel Module 개발.
 * 💬 STM32/DSP/ATMEGA 등 MCU 펌웨어 개발.
 * 💬 QT/QML Window GUI Application 개발.
