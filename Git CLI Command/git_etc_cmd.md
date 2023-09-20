@@ -13,3 +13,9 @@ $ git config --global merge.tool bc
 
 $ git config --global mergetool.bc.path "C:/Program Files/Beyond Compare 4/BComp.exe"
 ```
+</br>
+
+* merge 중에 CONFLICT 충돌이 발생한 경우 아래 명령을 통해 Beyound Compare 연동하여 확인할 수 있다.
+```
+$ git mergetool {file name}
+```
