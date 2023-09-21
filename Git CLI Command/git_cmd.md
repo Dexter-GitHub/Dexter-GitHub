@@ -82,6 +82,26 @@ $ git fetch
 $ git pull
 ```
 > pull은 fetch와 같이 원격저장소의 최신내역을 가져오고 커밋 히스토리 merge까지 해준다.
-
 </br>
 
+### tag
+> tag는 현재버전의 release 버전을 만들거나 특정한 태그를 커밋버전에 등록할 수 있다.
+</br>
+
+* light weight tag
+```
+$ git tag {branch|hash}
+```
+</br>
+
+* annnotated tag
+```
+$ git tag -a -m "message string" {branch|hash}
+```
+</br>
+
+* 원하는 tag로 커밋 이동하기
+```
+$ git checkout {tagName}
+```
+</br>
