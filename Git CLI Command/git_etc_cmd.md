@@ -50,3 +50,74 @@ $ ssh-keygen
 > GitHub 사용시 Setting > SSH and GPG keys에 public key를 등록하여 사용한다.
 </br>
 
+## Window terminal 에서 git bash 사용
+</br>
+
+* windows terminal 설치
+```
+C:\> winget install --id=Microsoft.WindowsTerminal -e
+```
+> windows terminal 실행 명령어는 Win+R wt 이다.
+</br>
+
+* windows terminal 설정
+> Ctrl + , 를 입력하여 설정탭을 열고 Json 파일 열기를 선택한다.
+> settings.json 파일내용중 "profiles" 리스트에 아래 코드를 추가한다.
+```
+"profiles":
+{
+  "defaults": {},
+  "list":
+  [
+    ...
+    {
+        "guid": "{124fc1da-dadc-4276-9c4e-f0524ba57a49}",
+        "name": "Git Bash",
+        "commandline": "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
+        "icon": "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico",
+        "startingDirectory": "%USERPROFILE%",
+        "cursorShape": "filledBox",
+        "hidden": false
+    }
+  ]
+},
+```
+</br>
+
+* 우클릭 숏컷 생성
+> sttings.json 파일에 아래와 같이 "startingDirectory"를 추가한다.
+```
+"profiles":
+{
+    "defaults":
+    {
+
+    },
+    "list":
+    [
+        {
+            // Make changes here to the powershell.exe profile.
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a11ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+                            // Here!!!
+            "startingDirectory": "."
+        }
+    ]
+},
+```
+</br>
+
+> wt.reg 파일을 생성한 후 아래 코드를 삽입하고 저장 한다.
+> wt.reg 파일을 우클릭하여 병합을 선택 한다.
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt]
+ @="Open Windows Terminal here"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt\command]
+ @="C:\\Users\\{UserName}\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+```
+</br>
