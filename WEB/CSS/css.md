@@ -229,10 +229,14 @@ google web font 사용 예제
 </head>
 <body>
     <p id="font1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p> 
     <p id="font2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p> 
 </body>
 </html>
@@ -343,9 +347,9 @@ google web font 사용 예제
 ## flex
 <br>
 <p>
-CSS의 flex는 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구이다.   
-지금까지 레이아웃과 관련된 다양한 속성들이 있었지만 그리 효과적이지 않았다.   
-flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다.  
+    CSS의 flex는 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구이다.   
+    지금까지 레이아웃과 관련된 다양한 속성들이 있었지만 그리 효과적이지 않았다.   
+    flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다.  
 </p>
 
 * flex를 사용하기 위해서는 컨테이너 태그에 display: flex 속성을 부여하야 한다.
@@ -355,8 +359,8 @@ flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다
 ### grow & shrink
 
 <p>
-아이템은 컨테이너의 크기에 따라서 작아지기도 하고 커지기도 한다. 이 때 작아지고, 커지는 비율을   
-지정하는 방법이 바로 grow & shrink 이다.
+    아이템은 컨테이너의 크기에 따라서 작아지기도 하고 커지기도 한다. 이 때 작아지고, 커지는 비율을   
+    지정하는 방법이 바로 grow & shrink 이다.
 </p>
 
 ### Example 
@@ -397,6 +401,16 @@ flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다
 </body>
 </html>
 ```
+<br>
+
+> 레이아웃 예제를 보기전 시멘틱 태그(sementic tag)를 사용한 레이웃 구성표를 참고하자.   
+
+#### 시멘틱 태그란 ?
+
+> <div> 태그의 기능과 마찬가지로 block element이면서 사이트의 구조(레이아웃)을 설계하기 위한 태그.       
+> HTML의 구조를 설계하는데 있어 태그에 의미를 부여 함으로써 사이트의 구조를 파악하기 용이할 수 있도록 도와주기 위해 만들어진 태그.
+
+<img width="500px" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4rchP%2FbtqYN03i7Ml%2FdFfx6I4t3FzrZfGSKwrfkk%2Fimg.png">
 <br>
 
 ### holy grail layout example
@@ -457,10 +471,11 @@ flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다
         </header>
         <section class="content">
             <main>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quaerat repellat a explicabo quibusdam ea rem pariatur repellendus qui magnam, fugit, recusandae sequi omnis? Sed, tenetur. Libero mollitia sapiente blanditiis facilis tempore
-                adipisci dignissimos accusantium obcaecati sit veniam culpa voluptas commodi amet, rem excepturi, quaerat optio inventore! Optio dolores atque, ipsa officiis, obcaecati molestias vitae sapiente voluptatum adipisci, eaque necessitatibus
-                voluptatibus doloremque accusantium suscipit alias provident aliquid soluta odit deserunt officia hic ducimus a dolore! Possimus expedita ex iste aspernatur deserunt, nostrum molestias fugiat dolorum sed laudantium, in aliquam culpa illo nulla
-                voluptates ratione dignissimos rem, at quasi magni mollitia?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quaerat repellat a explicabo quibusdam ea rem pariatur repellendus qui magnam, fugit, recusandae sequi omnis? Sed, tenetur. Libero
+                mollitia sapiente blanditiis facilis tempore adipisci dignissimos accusantium obcaecati sit veniam culpa voluptas commodi amet, rem excepturi, quaerat optio inventore! Optio dolores atque, ipsa
+                officiis, obcaecati molestias vitae sapiente voluptatum adipisci, eaque necessitatibus voluptatibus doloremque accusantium suscipit alias provident aliquid soluta odit deserunt officia hic
+                ducimus a dolore! Possimus expedita ex iste aspernatur deserunt, nostrum molestias fugiat dolorum sed laudantium, in aliquam culpa illo nulla voluptates ratione dignissimos rem, at quasi magni
+                mollitia?
             </main>
             <nav>
                 <ul>
@@ -485,6 +500,300 @@ flex를 이용하면 레이아웃을 매우 효과적으로 표현할 수 있다
 ## Media query(사용 장치에 따라 UI 표현)
 
 <p>
-media query는 화면의 종류와 크기에 따라서 디자인을 달리 줄 수 있는 CSS의 기능이다. 특히 최근의 트랜드인 반응형 디자인의 핵심 기술이라고 할 수 있다.
+    media query는 화면의 종류와 크기에 따라서 디자인을 달리 줄 수 있는 CSS의 기능이다. 특히 최근의 트랜드인 반응형 디자인의 핵심 기술이라고 할 수 있다.
+</p>
+<br>
+
+## float
+
+<p>
+    Float는 편집 디자인에서 이미지를 삽화로 삽입할 때 사용하는 기법이다. 또한 레이아웃을 잡을 때도 사용하는 기능이기 때문에 꽤 중요하다.
 </p>
 
+* float 속성을 무시하는 태그를 적용할 때 "clear: both"  또눈 "right" or "left" (float 속성을 사용하는 엘리먼트 방향에 따라 적용)
+
+### float를 이용한 holy fgrail layout example
+<br>
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 540px;
+            border: 1px solid gray;
+            margin: auto;
+        }   
+        header {
+            border-bottom: 1px solid gray;
+        }
+        nav {
+            float: left;
+            width: 120px;
+            border-right: 1px solid gray;
+        }
+        article {
+            float: left;
+            width: 300px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left: -1px;
+        }
+        aside {
+            float: left;
+            width: 120px;
+            border-left: 1px solid gray;
+            margin-left: -1px;
+        }
+        footer {
+            clear: both;
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS</h1>
+        </header>        
+        <nav>
+            <ul>
+                <li>position</li>
+                <li>float</li>
+                <li>flex</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>float</h2>                
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur asperiores possimus eos illo voluptate porro repellat sequi architecto ab! At doloribus ipsam quidem nobis. Ex exercitationem
+            aspernatur accusantium! Rem eaque tempora vero ducimus magni dolores necessitatibus nam assumenda optio. Cumque laborum dolorem inventore quaerat impedit reiciendis ipsum consequatur saepe optio. 
+        </article>
+        <aside>
+            ad
+        </aside>        
+        <footer>
+            copyleft
+        </footer>
+    </div>
+</body>
+</html>
+```
+<br>
+
+## multi column
+<p>
+    다단(multi column)은 신문처럼 화면을 분할해서 좀 더 읽기 쉽도록 만든 레이아웃을 의미한다.   
+    CSS에서는 이러한 레이아웃을 쉽게 구현할 수 있는 기능을 제공합니다. 
+</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dexter">
+    <style>
+            .column {
+                text-align: justify;
+                column-count: 4;
+                /* column-width: 200px; */
+                column-gap: 30px;
+                column-rule-style: solid;
+                column-rule-width: 5px;
+                column-rule-color: red;
+            }
+            h1 {
+                column-span: all;
+            }
+        </style>
+</head>
+<body>
+    <div class="column">
+        ... long text(ex:Lorem1000)
+        <h1>Title</h1>
+        ...
+    </div>
+</body>
+</html>
+```
+<br>
+
+## background
+<p>
+CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
+</p>
+
+* background-color : red
+* background-image : url("bg.png")
+* background-repeat : repeat, no-repeat, repeat-x, repeat-y
+* background-attachment : scroll, fixed
+* background-position : left top or x% y% or x y
+* background-size : 100px 100px or cover or contain
+<br>
+
+## filter
+<p>
+    필터는 이미지에 다양한 효과를 추가하는 방법이다. 
+</p>
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        img {
+            width: 200px;
+            transition: all 1s;
+        }
+        img:hover {
+            -webkit-filter: grayscale(100%) blur(3px);
+            -o-filter: grayscale(100%) blur(3px);
+            filter: grayscale(100%) blur(3px);
+            width: 200px;
+        }
+        h1 {
+            -webkit-filter: blur(3px);
+            -o-filter: blur(3px);
+            filter: blur(3px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <img src="images.png" alt="">
+</body>
+</html>
+```
+<br>
+
+## Transform
+<p>
+    transform은 엘리먼트의 크기, 위치, 모양을 변경하는 속성이다. 
+</p>
+
+<a target="_blank" href="https://codepen.io/vineethtrv/pen/XKKEgM">CODE PEN CSS Transform link</a>
+
+## Transition
+<p>
+    전환은 효과가 변경되었을 때 부드럽게 처리해주는 CSS의 기능이다. 
+</p>
+
+* transition-duration
+* transition-property
+* transition-delay
+* transition-timing-function
+* transition
+<br>
+
+<a target="_blank" href="https://matthewlein.com/tools/ceaser">transition timming function 만들기</a>
+
+#### Example
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a {
+            font-size: 3rem;
+            display: inline-block;
+            /* 
+            transition-property: font-size transform;
+            transition-duration: 0.1s; 
+            transition: all 0.1s;
+            */
+            transition: font-size 1s, transform 0.1s;
+        }
+        a:active {
+            transform: translate(20px, 20px);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Click</a>
+</body>
+</html>
+```
+<br>
+
+## link, import
+<br>
+
+```
+...
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> or -->
+    <style>
+        /* css 선언 안에서 사용가능 */
+        @import url('style.css');
+    </style>
+</head>
+...
+```
+<br>
+
+## 코드 경량화(minify)
+<br>
+
+#### WEB 어플리케이션을 이용한 경량화
+
+* <a target="_blank" href="https://adamburgess.github.io/clean-css-online/">CLEAN CSS LINK</a>
+<br>
+
+#### IDE 확장 익스텐션 설치
+* vscode 확장 익스텐션 minifier을 설치하여 사용 가능하다.
+<br>
+
+#### nodejs 기반 minify를 이용한 경량화
+
+설치
+```
+npm install clean-css-cli -g
+```
+
+사용법
+```
+cleancss -o filename.min.css filename.css
+```
+<br>
+
+## Fontello
+
+<p>
+    딩벳폰트는 폰트 대신 어떤 문자에 해당하는 이미지로 이루어진 폰트를 의미합니다.
+    fontello는 딩벳이나 아이콘을 폰트로 제공하는 여러 서비스를 모아둔 서비스입니다. 
+    특히 SVG 파일을 업로드하면 폰트로 만들어주기도 합니다. 
+</p>
+
+#### fontello 사이트
+* <a target="_blank" href="https://fontello.com/">fontello link</a>
+
+> 위 사이트에서 원하는 아이콘을 선택하고, 다운받는다. 사용방법은 아래 예시 코드와 같다.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/fontello.css">
+    <style>
+        body {
+            font-family: "fontello";
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 아이콘 코드를 사용 (font-family 속성 정의가 필요) -->
+    &#xe800<br>  
+    &#xf119
+    <i class="icon-frown"></i>    <!-- 아이콘 이름으로 사용(font-family 속성 정의가 필요치 않다)  -->
+</body>
+</html>
+```
+<br>
