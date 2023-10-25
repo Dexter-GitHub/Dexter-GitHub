@@ -63,6 +63,7 @@ var og = /a/g;
 "abcdea".match(og);
 > ["a", "a"]
 ```
+<br>
 
 ## 캡처
 <br>
