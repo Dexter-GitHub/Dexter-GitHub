@@ -20,7 +20,9 @@ $ git add . (전체파일)
 </br>
 
 ### branch
-* branch 생성
+<br>
+
+branch 생성
 ```
 $ git branch {name}
   or
@@ -28,13 +30,32 @@ $ git checkout -b {name}
 ```
 </br>
 
-* branch 간의 이동
+branch 간의 이동
 ```
 $ git checkout {branch}
   or
 $ git switch {branch}
 ```
 </br>
+
+branch 이름 변경
+* local 저장소
+```
+$ git branch -m [OLD_BRANCH] [NEW_BRANCH]
+```
+* GitHub 저장소
+```
+$ git push origin [NEW_BRANCH]
+$ git push origin --delete [OLD_BRANCH]
+
+or
+
+$ git push origin :[OLD_BRANCH]
+
+or
+
+$ git push origin :[OLD_BRANCH] [NEW_BRANCH]    /* 삭제와 동시에 생성 */
+```
 
 ### stash (tracked 파일에 대해서만 적용 되는 특성을 가지고 있다)
 * commit전 작업내용은 branch 이동시 작업내용이 공유 됨으로 작업중인 상태를 저장하는 용도로 사용된다.
