@@ -412,3 +412,104 @@ document.write(p1.coding() + "<br />");
 ```
 <br>
 
+## 표준 내장 객체의 확장(Standard Built-in Object)
+<p>
+자바스크립트가 기본적으로 가지고 있는 객체들을 의미한다.   
+</p>
+자바스크립트는 아래와 같은 내장 객체를 가지고 있다.
+
+* Object
+* Function
+* Array
+* String
+* Boolean
+* Number
+* Math
+* Date
+* RegExp
+<br>
+
+```
+var arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+function getRandomValueFromArray(arr) {
+    var index = Math.floor(arr.length * Math.random());           
+    return arr[index];
+}
+
+console.log(getRandomValueFromArray(arr));
+```
+<br>
+
+위 예제를 내장객체 확장 코드로 변환
+```
+Array.prototype.random = function() {
+    var index = Math.floor(this.length * Math.random());
+    return this[index]        
+};
+var arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+
+console.log(arr.random());
+```
+<br>
+
+### Object API 사용 예제
+<br>
+
+```
+var arr = ["a", "b", "c"];
+console.log('Object.keys(arry)', Object.keys(arr));
+
+var o = new Object();
+console.log('o.toString()', o.toString());
+
+var a = new Array(1, 2, 3);
+console.log('a.toString()', a.toString());
+```
+<br>
+
+### Object 확장
+<br>
+
+```
+Object.prototype.contain = function(needle) {
+    for (var name in this) {
+        if (this[name] === needle) {
+            return true;
+        }
+    }
+    
+    return false;
+};
+
+var o = {'name':'Dexter', 'city': 'changwon'};
+var a = ['Dexter', 'egoing', 'leezche'];
+
+for (var name in o) {
+    // 객체의 직접적으로 관계가 있는지 확인하는 기능
+    if (o.hasOwnProperty(name)) {
+        console.log(name);
+    }
+}
+```
+
+> 주의: 모든 Object에 contain 함수가 추가됨으로 신중하게 사용할 것
+<br>
+
+## 데이터 타입
+<br>
+
+* 숫자
+* 문자열
+* 불리언(true/false)
+* null
+* undefined
+객체가 아닌 데이터 타입을 원시 데이터 타입(primitive type)이라고 한다. 그 외의 모든 데이터 타입들은 객체다.<br>
+
+### 레퍼 객체
+<p>
+문자열은 분명히 프로퍼티와 메소드가 있다. 그렇다면 객체다. 그런데 왜 문자열이 객체가 아니라고 할까?   
+그것은 내부적으로 문자열이 원시 데이터 타입이고 문자열과 관련된 어떤 작업을 하려고 할 때 자바스크립트는    
+임시로 문자열 객체를 만들고 사용이 끝나면 제거하기 때문이다.
+</p><br>
+
+hoi
