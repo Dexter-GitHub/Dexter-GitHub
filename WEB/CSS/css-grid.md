@@ -1,4 +1,6 @@
 # Grid
+<br>
+
 <p>
   div container를 Grid Container(그리드 컨테이너)라고 부르고,<br>
   자식 요소인 div item들을 Grid Item(그리드 아이템)이라고 부른다.
@@ -8,7 +10,7 @@
   Grid는 컨테이너에 display: grid; 를 설정하는 것으로 시작한다.
 </p>
 
-```
+```css
 .container {
   display: grid;
 }
@@ -16,42 +18,50 @@
 <br>
 
 * 그리드 컨테이너 (Grid Container)
+  
 <p>
-  &emsp;&emsp; display: grid를 적용하는, Grid의 전체 영역이다.<br>
+  &emsp;&emsp; <code>display: grid</code>를 적용하는, Grid의 전체 영역이다.<br>
   &emsp;&emsp; Grid 컨테이너 안의 요소들이 Grid 규칙의 영향을 받아 정렬 된다.
 </p>
 
 * 그리드 아이템 (Grid Item)
+  
 <p>
   &emsp;&emsp; Grid 컨테이너의 자식 요소들 이다.   
 </p>
 
 * 그리드 트랙 (Grid Track)
+  
 <p>
   &emsp;&emsp; Grid의 행(Row) 또는 열(Column)
 </p>
 
 * 그리드 셀 (Grid Cell)
+  
 <p>
   &emsp;&emsp; Grid의 한 칸을 가리킨다. 
 </p>
 
 * 그리드 라인 (Grid Line)
+  
 <p>
   &emsp;&emsp; Grid 셀을 구분하는 선이다.
 </p>
 
 * 그리드 번호 (Grid Number)
+  
 <p>
   &emsp;&emsp; Grid 라인의 각 번호이다.
 </p>
 
 * 그리드 갭 (Grid Gap)
+  
 <p>
   &emsp;&emsp; Grid 셀 사이의 간격이다.
 </p>
 
 * 그리드 영역 (Grid Area)
+  
 <p>
   &emsp;&emsp; Grid 라인으로 둘러싸인 사각형 영역으로, 그리드 셀의 집합니다.
 </p>
@@ -62,12 +72,13 @@
 <br>
 
 ## grid-template-rows / frid-template-columns (그리드 형태 정의)
+
 <p>
   컨테이너에 Grid 트랙의 크기들을 지정해주는 속성이다.<br>
   여어가지 단위를 사용할 수 있고 섞어서 쓸 수도 있다.
 </p>
 
-```
+```css
 .container {
   grid-template-columns: 200px 200px 500px;
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -89,7 +100,7 @@
 
 ### repeat 함수
 
-```
+```css
 .container {
   grid-template-columns: repeat(5, 1fr);
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
@@ -109,7 +120,7 @@
   <strong>minmax(100px, auto)</strong>의 의미는 <strong>최소한 100px, 최대는 자동으로 늘어남</strong> 이다.
 </p>
 
-```
+```css
 .container {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(100px, auto));
@@ -122,7 +133,7 @@
   auto-fill 과 auto-fit은 column의 개수를 미리 정하지 않고 설정된 너비가 허용하는 한 최대한 셀을 채운다.
 </p>
 
-```
+```css
 .container {
   grid-template-columns: repeat(auto-fill, minmax(20%, auto));
 }
@@ -139,7 +150,7 @@
   그리드 셀 사이의 간격을 설정한다.
 </p>
 
-```
+```css
 .container {
   row-gap: 10px;
   /* row의 간격을 10px로 */
@@ -148,14 +159,14 @@
 }
 ```
 
-```
+```css
 .container {
   gap: 10px 20px;
   /* row-gap: 10px; column-gap: 20px; */
 }
 ```
 
-```
+```css
 .container {
   gap: 20px;
   /* row-gap: 20px; column-gap: 20px; */
@@ -167,7 +178,7 @@
   블라우저 호환 범위를 넓히기 위해 아래처럼 이전 버전의 이름을 둘다 쓰기도 한다.
 </p>
 
-```
+```css
 .container {
   grid-gap: 20px;
   gap: 20px;
@@ -180,7 +191,7 @@
    grid-template-columns(또는 grid-template-rows)의 통제를 벗어난 위치에 있는 트랙의 크기를 지정하는 속성이다.
 </p>
 
-```
+```css
 .container {
   grid-template-rows: repeat(3, minmax(100px, auto))
 }
@@ -191,7 +202,7 @@
 아래 코드와 같이 grid-auto-rows를 사용한다.
 </p>
 
-```
+```css
 .container {
   grid-auto-rows: minmax(100px, auto);
 }
@@ -212,7 +223,7 @@
   이 속성들은 Grid 아이템에 적용하는 속성으로, 각 셀의 영역을 지정한다.
 </p>
 
-```
+```css
 .item:nth-chold(1) {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -225,7 +236,7 @@
   grid-column은 start와 end 속성을 한번에 쓰는 축약형이다.
 </p>
 
-```
+```css
 .item:nth-child(1) {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -236,7 +247,7 @@
   시작번호 / 끝번호를 지정하는 방법 외에, 몇 개의 셀을 차지하게 할 것인지를 지정해줄 수 있다.
 </p>
 
-```
+```css
 .item:nth-child(1) {
   /* 1번 라인에서 2칸 */
   grid-column: 1 / span 2;
@@ -247,11 +258,12 @@
 <br>
 
 ## grid-template-areas (영역 이름으로 그리드 정의)
+
 <p>
   각 영역(Grid Area)에 이름을 붙이고, 그 이름을 이용해서 배치하는 방법이다.
 </p>
 
-```
+```css
 .container {
   grid-template-areas:
       "header header header"
@@ -267,7 +279,7 @@
   빈칸은 마침표 또는 "none"을 사용하면 된다.
 </p>
 
-```
+```css
 .header { grid-area: header; }
 .sidebar-a { grid-area: a; }
 .main-content { grid-area: main; }
@@ -278,11 +290,12 @@
 <br>
 
 ## grid-auto-flow 자동 배치
+
 <p>
   아이템이 자동 배치되는 흐름을 결정하는 속성이다.
 </p>
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25%, auto));
@@ -300,7 +313,7 @@ item:nth-child(7) { grid-column: auto / span 2; }
   아이템들을 세로(column축) 방향으로 정렬한다. 컨테이너에 적용.
 </p>
 
-```
+```css
 .container {
   align-items: stretch;
   /* align-items: start; */
@@ -311,11 +324,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## justify-items (가로 방향 정렬)
+
 <p>
   아이템들을 가로(row 축) 방향으로 정렬한다. 컨테이너에 적용한다.
 </p>
 
-```
+```css
 .container {
   justify-items: stretch;
   /* justify-items: start; */
@@ -326,12 +340,13 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ### place-items
+
 <p>
   align-items와 justify-items를 같이 쓸 수 있는 단축 속성이다.<br>
   align-items, justify-items의 순서로 작서하고, 하나의 값만 쓰면 두 속성 모두에 적용 된다.
 </p>
 
-```
+```css
 .container {
   place-items: center start;
 }
@@ -339,11 +354,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## align-content (아이템 그룹 세로 정렬)
+
 <p>
   Grid 아이템들의 높이를 모두 합한 값이 Grid 컨테이너의 높이보다 작을 때 Grid 아이템들을 통째로 정렬한다.
 </p>
 
-```
+```css
 .container {
   align-content: stretch;
   /* align-content: start; */
@@ -357,11 +373,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## justify-contemt (아이템 그룹 가로 정렬)
+
 <p>
   Grid 아이템들의 너비를 모두 합한 값이 Grid 컨테이너의 너비보다 작을 때 Grid 아이템들을 통째로 정렬한다.
 </p>
 
-```
+```css
 .container {
   justify-content: stretch;
   /* justify-content: start; */
@@ -375,12 +392,13 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ### palce-content
+
 <p>
   align-content와 justify-content를 같이 쓸 수 있는 단축 속성이다.<br>
   align-content, justify-contnent의 순서로 작성하고, 하나의 값만 쓰면 두 속성 모두에 적용된다.
 </p>
 
-```
+```css
 .container {
   palce-content: space-between center;
 }
@@ -388,11 +406,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## align-self (개별 아이템 세로 정렬)
+
 <p>
   해당 아이템을 세로(column축) 방향으로 정렬한다. 아이템에 적용한다.
 </p>
 
-```
+```css
 .item {
   align-self: stretch;
   /* align-self: start; */
@@ -403,11 +422,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## justify-self (개별 아이템 가로 정렬)
+
 <p>
   해당 아이템을 가로 (row축) 방향으로 정렬한다. 아이템에 적용한다.
 </p>
 
-```
+```css
 .item {
   justify-self: stretch;
   /* justify-self: start; */
@@ -418,12 +438,13 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ### place-self
+
 <p>
   align-self와 justify-self를 같이 쓸 수 있는 단축 속성이다.<br>
   align-self, justify-self의 순서로 작성하고, 하나의 값만 쓰면 두 속성 모두에 적용된다.
 </p>
 
-```
+```css
 .item {
   place-self: start center;
 }
@@ -431,12 +452,13 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## order (배치순서)
+
 <p>
   각 아이템들의 시각적 나열 순서를 결정하는 속성이다.<br>
   숫자값이 들어가며, 작은 숫자일 수록 먼저 배치된다.
 </p>
 
-```
+```css
 .item:nth-child(1) { order: 3; }
 .item:nth-child(2) { order: 1; }
 .item:nth-child(3) { order: 2; }
@@ -444,11 +466,12 @@ item:nth-child(7) { grid-column: auto / span 2; }
 <br>
 
 ## z-index
+
 <p>
   z-index로 Z축 정렬을 할 수 있다. 숫자가 클 수록 위로 올라온다.
 </p>
 
-```
+```css
 .item:nth-child(5) {
   z-index: 1;
   transform: scale(2);
