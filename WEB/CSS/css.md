@@ -5,7 +5,7 @@
 ## CSS를 html에 포함시킬 수 있는 두가지 방법
 <br>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,11 +24,12 @@
 <br>
 
 ## 선택자
+<br>
 
 ### ID 선택자
 <br>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>   
@@ -58,7 +59,7 @@
 ### 부모 자식 선택자
 <br>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,12 +106,12 @@
 ## 가상 클래스 선택자
 <br>
 <p>
-가상 클래스(pseudo-class)란 html 요소의 특별한 상태(state)를 명시할 때 사용하는 선택자를 말한다.    
+    가상 클래스(pseudo-class)란 html 요소의 특별한 상태(state)를 명시할 때 사용하는 선택자를 말한다.    
 </p>
 
 ### 동적 가상 클래스
 <p>
-링크(anchor) 태그의 상태에 따라 각각의 스타일을 지정하는 전용 선택자이다.    
+    링크(anchor) 태그의 상태에 따라 각각의 스타일을 지정하는 전용 선택자이다.    
 </p>
 
 * :link - 방문한 적이 없는 링크<br>
@@ -122,7 +123,7 @@
 
 ### 상태 가상 클래스
 <p>
-입력(input) 태그의 상태에 따라 각각의 스타일을 지정하는 전용 선택자이다.    
+    입력(input) 태그의 상태에 따라 각각의 스타일을 지정하는 전용 선택자이다.    
 </p>
 
 * :checked: 셀렉터가 체크 상태일 때<br>
@@ -132,17 +133,18 @@
 
 ### form 정합성 체크 선택자
 
-* :valid(셀렉터): 정합성 검증이 성공한 input 요소 또는 form 요소를 선택한다.<br>
-* :invalid(셀렉터): 정합성 검증이 실패한 input 요소 또는 form 요소를 선택한다.
+* :valid(셀렉터): 정합성 검증이 성공한 <code>input</code> 요소 또는 <code>form</code> 요소를 선택한다.<br>
+* :invalid(셀렉터): 정합성 검증이 실패한 <code>input</code> 요소 또는 <code>form</code> 요소를 선택한다.
 <br>
 
 ### 가상 선택자
 <p>
-보통 선택자는 HTML 요소(element)를 직접적으로 선택하여 스타일링한다.<br>
-하지만 가상 선택자는 HTML요소를 직접적으로 선택하지 않고, 해당 요소의 상태(state)에 따라 선택한다.
+    보통 선택자는 HTML 요소(element)를 직접적으로 선택하여 스타일링한다.<br>
+    하지만 가상 선택자는 HTML요소를 직접적으로 선택하지 않고, 해당 요소의 상태(state)에 따라 선택한다.
 </p>
+
 <p>
-가상 요소를 표현할때 보통 클론(:)을 사용하지만 가상 클래스와의 구분을 하기 위해 이중클론(::)의 사용을 권장한다.
+    가상 요소를 표현할때 보통 클론(:)을 사용하지만 가상 클래스와의 구분을 하기 위해 이중클론(::)의 사용을 권장한다.
 </p>
 
 * ::first-letter: 콘텐츠의 첫글자를 선택한다.<br>   
@@ -153,7 +155,7 @@
 <br>
 
 ### 부정 선택자
-```
+```css
 input:not([type=password]) {
     background: yellow;
 }
@@ -162,16 +164,16 @@ input:not([type=password]) {
 
 ### 구조 가상 클래스
 <p>
-구조 가상 클래스를 사용하면 HTML요소의 계층 구조에서 특정 위치에 있는 요소를 수학적인 값으로 선택할 수 있다.    
+    구조 가상 클래스를 사용하면 HTML요소의 계층 구조에서 특정 위치에 있는 요소를 수학적인 값으로 선택할 수 있다.    
 </p>
 <br>
 
 #### FIRST CHILD
 <p>
-형제 요소 중 첫번째 요소와 선택한 타입이 일치하면 선택    
+    형제 요소 중 첫번째 요소와 선택한 타입이 일치하면 선택    
 </p>
 
-```
+```css
 span:first-child    /* 첫번째 자식(span)과 선택자(span)가 일치하면 적용 */
 
 p:first-child       /* 첫번째 자식(span)과 선택자(p)가 불일치하여 미적용 */
@@ -179,11 +181,12 @@ p:first-child       /* 첫번째 자식(span)과 선택자(p)가 불일치하여
 <br>
 
 #### LAST CHILD
+
 <p>
-형제 요소 중 마지막 요소와 선택한 타입이 일치하면 선택    
+    형제 요소 중 마지막 요소와 선택한 타입이 일치하면 선택    
 </p>
 
-```
+```css
 p:last-child        /* 마지막 자식(p)과 선택자(p)가 일치하면 적용 */
 
 span: last-child    /* 마지막 자식(p)과 선택자(span)가 불일치하여 미적용 */
@@ -192,14 +195,15 @@ span: last-child    /* 마지막 자식(p)과 선택자(span)가 불일치하여
 
 #### NTH CHILD
 <p>
-형제 요소 중 n번째 요소와 선택한 타입이 일치하면 선택    
+    형제 요소 중 n번째 요소와 선택한 타입이 일치하면 선택    
 </p>
 
-```
+```css
 타입:nth-child(n)
 
 /* span:nth-child(1) === span:first-child */
 ```
+<br>
 
 * :nth-child(1) = 첫번째 선택<br>
 * :nth-child(2n) = 두번째 마다 선택<br>
@@ -213,27 +217,29 @@ span: last-child    /* 마지막 자식(p)과 선택자(span)가 불일치하여
 <br>
 
 #### FIRST OF TYPE / LAST OF TYPE
+
 <p>
-선택한 타입들 형제 요소 중에 첫번째 요소를 선택    
+    선택한 타입들 형제 요소 중에 첫번째 요소를 선택    
 </p>
 
-```
+```css
 p:first-of-type     /* 부모안에 모든 p요소 중 첫번째 p요소 선택 */
 ```
 <br>
 
 <p>
-선택한 타입들 형제 요소 중에 마지막 요소를 선택    
+    선택한 타입들 형제 요소 중에 마지막 요소를 선택    
 </p>
 
-```
+```css
 span:last-of-type    /* 부모안에 모든 span요소 중 마지막 span요소 선택 */
 ```
 <br>
 
 #### NTH OF TYPE
+
 <p>
-선택한 타입들 형제 요소 중에 n번쨰 요소를 선택    
+    선택한 타입들 형제 요소 중에 n번째 요소를 선택    
 </p>
 
 * p:nth-of-type(1) = 부모안에 요소 중 첫번째 p요소 선택<br>
@@ -267,7 +273,7 @@ span:last-of-type    /* 부모안에 모든 span요소 중 마지막 span요소 
 ### CSS 명시도
 
 <p>
-대상을 명확하게 특정 할수록 명시도가 높아지고 우선순위가 높아진다.
+    대상을 명확하게 특정 할수록 명시도가 높아지고 우선순위가 높아진다.
 </p>
 
 1. !important<br>
@@ -281,10 +287,11 @@ span:last-of-type    /* 부모안에 모든 span요소 중 마지막 span요소 
 
 > 속성 뒤 !important 키워드를 사용하면 가장 높은 우선순위를 적용할 수 있다.   
 > 하지만, !important 사용은 권장 되지 않으며 Cascading 우선순위를 잘 적용하여 사용하는 것이 좋다.
+<br>
 
 ### Example
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -323,33 +330,39 @@ span:last-of-type    /* 부모안에 모든 span요소 중 마지막 span요소 
 <br>
 
 ### px 단위
+
 <p>
-px은 픽셀(화소) 단위이다. 1px은 화소 1개 크기를 의미한다.
+    px은 픽셀(화소) 단위이다. 1px은 화소 1개 크기를 의미한다.
 </p><br>
 
 ### % 단위
+
 <p>
-%는 백분률 단위의 상대 단위이다.<br>
-요소에 지정된 사이즈(상속된 사이즈나 디폴트 사이즈)에 상태적인 사이즈를 설정한다.
+    %는 백분률 단위의 상대 단위이다.<br>
+    요소에 지정된 사이즈(상속된 사이즈나 디폴트 사이즈)에 상태적인 사이즈를 설정한다.
 </p><br>
 
 ### em, rem 단위
+
 <p>
-em, rem은 배수 단위로 상대 단위이다.<br>
-요소에 지정된 사이즈(상속된 사이즈나 디폴트 사이즈)에 상대적인 사이즈를 설정한다.
+    em, rem은 배수 단위로 상대 단위이다.<br>
+    요소에 지정된 사이즈(상속된 사이즈나 디폴트 사이즈)에 상대적인 사이즈를 설정한다.
 </p><br>
 
 ### vw, vh 단위
+
 <p>
-반응형 웹디자인은 화면의 크기에 동적으로 대응하기 위해 %단위를 자주 사용한다.<br>
-하지만 % 단위는 em과 같이 상속에 의해 부모 요소에 상대적 영향을 받는다.    
+    반응형 웹디자인은 화면의 크기에 동적으로 대응하기 위해 %단위를 자주 사용한다.<br>
+    하지만 % 단위는 em과 같이 상속에 의해 부모 요소에 상대적 영향을 받는다.    
 </p>
+
 <p>
-반면 Viewport 단위는 상대적인 단위로 브라우저 너비를 기준으로 한 상대적 사이즈를 의미한다.    
+    반면 Viewport 단위는 상대적인 단위로 브라우저 너비를 기준으로 한 상대적 사이즈를 의미한다.    
 </p>
+
 <p>
-vw와 vh는 현재 브라우저의 가로와 세로 값이라 볼수 있다. 브라우저 크기를 줄이면 이 역시 값이 줄어든다.<br>
-즉, rem이 루트 요소를 기준으로 상대적인 크기를 구했듯이, 브라우저 길이를 절대값으로 삼고 기준으로 상대 적인 사이즈를 조젛하는 것으로 보면된다.    
+    vw와 vh는 현재 브라우저의 가로와 세로 값이라 볼수 있다. 브라우저 크기를 줄이면 이 역시 값이 줄어든다.<br>
+    즉, rem이 루트 요소를 기준으로 상대적인 크기를 구했듯이, 브라우저 길이를 절대값으로 삼고 기준으로 상대 적인 사이즈를 조젛하는 것으로 보면된다.    
 </p><br>
 
 * vw: viewport 너비의 1/100
@@ -362,7 +375,7 @@ vw와 vh는 현재 브라우저의 가로와 세로 값이라 볼수 있다. 브
 
 > css에서 color 표현방식은 rgb 또는 hex 표현 방식을 쓴다.
 
-```
+```css
 rgb(255, 255, 255) // 첫번째 인수 red, 두번째 인수 green, 세번째 인수 blue
 #FF0000            // red
 #00FF00            // green
@@ -378,7 +391,8 @@ rgb(255, 255, 255) // 첫번째 인수 red, 두번째 인수 green, 세번째 �
 * monospace = 고정폭
 
 ### Example
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -414,7 +428,7 @@ rgb(255, 255, 255) // 첫번째 인수 red, 두번째 인수 green, 세번째 �
 
 google web font 사용 예제
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -452,7 +466,8 @@ google web font 사용 예제
 * 아래 display 속성을 통해 레벨을 변경할 수 있다.
 
 ### Example
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -478,7 +493,8 @@ google web font 사용 예제
 * padding은 box 모델과 데이터 간의 간격을 조절한다.
 
 ### Example
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -510,7 +526,8 @@ google web font 사용 예제
 * box 모델의 width 또는 height 지정시에 border의 사이즈 때문에 예측이 힘들다.
 * box-sizing 속성을 이용하면 보다 예측이 쉬운 형태로 조절 가능하다.
 ### Example
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -565,7 +582,8 @@ google web font 사용 예제
 </p>
 
 ### Example 
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -617,7 +635,7 @@ google web font 사용 예제
 ### holy grail layout example
 <br>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -716,7 +734,7 @@ google web font 사용 예제
 ### float를 이용한 holy fgrail layout example
 <br>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -793,7 +811,7 @@ google web font 사용 예제
     CSS에서는 이러한 레이아웃을 쉽게 구현할 수 있는 기능을 제공합니다. 
 </p>
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -827,7 +845,7 @@ google web font 사용 예제
 
 ## background
 <p>
-CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
+    CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
 </p>
 
 * background-color : red
@@ -843,7 +861,7 @@ CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
     필터는 이미지에 다양한 효과를 추가하는 방법이다. 
 </p>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -874,6 +892,7 @@ CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
 <br>
 
 ## Transform
+
 <p>
     transform은 엘리먼트의 크기, 위치, 모양을 변경하는 속성이다. 
 </p>
@@ -881,6 +900,7 @@ CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
 <a target="_blank" href="https://codepen.io/vineethtrv/pen/XKKEgM">CODE PEN CSS Transform link</a>
 
 ## Transition
+
 <p>
     전환은 효과가 변경되었을 때 부드럽게 처리해주는 CSS의 기능이다. 
 </p>
@@ -895,7 +915,8 @@ CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
 <a target="_blank" href="https://matthewlein.com/tools/ceaser">transition timming function 만들기</a>
 
 #### Example
-```
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -926,7 +947,7 @@ CSS를 이용하면 엘리먼트의 배경을 지정할 수 있다.
 ## link, import
 <br>
 
-```
+```html
 ...
 <head>
     <!-- <link rel="stylesheet" href="style.css"> or -->
@@ -977,7 +998,7 @@ cleancss -o filename.min.css filename.css
 
 > 위 사이트에서 원하는 아이콘을 선택하고, 다운받는다. 사용방법은 아래 예시 코드와 같다.
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
