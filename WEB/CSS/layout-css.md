@@ -58,7 +58,7 @@
 </p>
 <br>
 
-```
+```css
 .container {
   flex-direction: row;
   /* flex-direction: column; */
@@ -95,7 +95,7 @@
   아이템 줄바꿈을 어떻게 할지 결정하는 속성이다.
 </p>
 
-```
+```css
 .container {
   flex-wrap: nowrap;
   /* flex-wrap: wrap; */
@@ -105,28 +105,32 @@
 <br>
 
 #### nowrap (기본값)
+
 <p>
   줄바꿈을 하지 않는다. overflow 발생
 </p>
 
 #### wrap
+
 <p>
   줄바꿈 한다. float이나 inline-block으로 배치한 요소들과 비슷하게 동작.
 </p>
 
 #### wrap-reverse
+
 <p>
   줄바꿈을 하는데, 아이템을 역순으로 배치한다.
 </p>
 <br>
 
 ### flex-flow
+
 <p>
   flex-direction과 flex-wrap을 한꺼번에 지정할 수 있는 단축 속성이다.<br>
   direction, wrap의 순으로 사용한다.
 </p>
 
-```
+```css
 .container {
   flex-flow: row wrap;
   /* 아래의 두 줄을 단축하여 사용 */
@@ -137,11 +141,12 @@
 <br>
 
 ### justify-content
+
 <p>
   메인축 방향으로 아이템들을 정렬하는 속성이다.
 </p>
 
-```
+```css
 .container {
   justify-content: flex-start;
   /* justify-content: flex-end */
@@ -154,44 +159,51 @@
 <br>
 
 #### flex-start (기본값)
+
 <p>
   아이템들을 시작점으로 정렬한다.<br>
   flex-direction이 row(가로 배치)일 때는 왼쪽, column(세로 배치)일 때는 위.
 </p>
 
 #### flex-end
+
 <p>
   아이템들을 끝점으로 정렬한다.<br>
   flex-direction이 row(가로 배치)일 때는 오른쪽, column(세로 배치)일 때는 아래.
 </p>
 
 #### center
+
 <p>
   아이템들을 가운데로 정렬한다.
 </p>
 
 #### space-between
+
 <p>
   아이템들의 "사이(between)"에 균일한 간격을 만들어 준다.
 </p>
 
 #### space-around
+
 <p>
   아이템들의 "둘레(around)"에 균일한 간격을 만들어 준다.
 </p>
 
 #### space-evenly
+
 <p>
   아이템들의 사이와 양 끝에 균일한 간격을 만들어 준다.
 </p>
 <br>
 
 ### align-items(수직축 방향 정렬)
+
 <p>
   수직축 방향으로 아이템들을 정렬하는 속성.
 </p>
 
-```
+```css
 .container {
   align-items: stretch;
   /* align-items: flex-start; */
@@ -202,36 +214,41 @@
 ```
 
 #### stretch (기본값)
+
 <p>
   아이템들이 수직축 방향으로 끝까지 늘어난다.
 </p>
 
 #### flex-start
+
 <p>
   아이템들을 시작점으로 정렬한다.<br>
   flex-direction이 row(가로 배치)일 때는 위, column(세로 배치)일 때는 왼쪽.
 </p>
 
 #### flex-end
+
 <p>
   아이템들을 끝으로 정렬한다.<br>
   flex-direction이 row(가로 배치)일 때는 아래, column(세로 배치)일 때는 오른쪽.
 </p>
 
 #### center
+
 <p>
   아이템들일 가운데로 정렬한다.
 </p>
 
 #### baseline
+
 <p>
   아이템들을 텍스트 베이스라인 기준으로 정렬한다.
 </p>
 <br>
 
 > [TIP]<br>
-> justify-content: center;<br>
-> align-item: center;<br>
+> <code>justify-content: center;</code><br>
+> <code>align-item: center;</code><br>
 > 위와 같이 해주면 아이템을 한 가운데어 놓을 수 있다.
 <br>
 
@@ -240,7 +257,7 @@
   flex-wrap: wrap; 이 설정된 상태에서, 아이템들의 행이 2줄 이상 되었을 때의 수직축 방향 정렬을 결정하는 속성
 </p>
 
-```
+```css
 .container {
   flex-wrap: wrap;
   align-content: stretch;
@@ -258,12 +275,13 @@
 <br>
 
 ### flex-basis
+
 <p>
   flex-basis는 flex 아이템의 기본 크기를 설정한다.<br>
   flex-direction이 row 일 때는 width, column일 때는 height.
 </p>
 
-```
+```css
 .item {
   flex-basis: auto;  /* 기본값 */
   /* flex-basis: 0; */
@@ -287,7 +305,7 @@
   0보다 큰 값이 설정되면 해당 아이템이 유연한(flexible) 박스로 변하고 원래의 크기보다 커지며 빈공간을 채운다.
 </p>
 
-```
+```css
 .item {
   flex-grow: 1;
   /* flex-grow: 0; */ /* 기본값 */
@@ -298,7 +316,7 @@
   flex-grow에 설정되는 숫자의 의미는 아이템들의 flex-basis를 제외한 여백 부분을 flex-grow에 지정된 숫자의 비율로 나누어 가진다.
 </p>
 
-```
+```css
 /* 1:2:1의 비율로 설정할 경우 */
 .item {
   .item:nth-child(1) { flex-grow: 1; }
@@ -326,7 +344,7 @@
   flex-grow, glex-shrink, flex-basis를 한 번에 쓸 수 있는 축약형 속성이다.  
 </p>
 
-```
+```css
 .item {
   flex: 1;
   /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
@@ -339,11 +357,12 @@
 <br>
 
 ### align-self (수직축으로 아이템 정렬)
+
 <p>
   수직축 방향을 정렬한다.
 </p>
 
-```
+```css
 .item {
   align-self: auto;
   /* align-self: stretch; */
@@ -361,12 +380,13 @@
 <br>
 
 ### order (배치순서)
+
 <p>
   각 아이템들의 나열 순서를 결정하는 속성이다.<br>
   작은 숫자일 수록 먼저 배치된다.
 </p>
 
-```
+```css
 .item:nth-child(1) { order: 3; }
 .item:nth-child(2) { order: 1; }
 .item:nth-child(3) { order: 2; }
@@ -374,11 +394,12 @@
 <br>
 
 ### z-index
+
 <p>
   z-index로 Z축 정렬 한다. 숫자가 클수록 위로 올라온다.
 </p>
 
-```
+```css
 .item:nth-child(2) {
   z-index: 1;
   transform: scale(2);
