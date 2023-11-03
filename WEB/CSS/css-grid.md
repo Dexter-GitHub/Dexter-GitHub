@@ -445,5 +445,31 @@ item:nth-child(7) { grid-column: auto / span 2; }
 
 ## z-index
 <p>
-  
+  z-index로 Z축 정렬을 할 수 있다. 숫자가 클 수록 위로 올라온다.
 </p>
+
+```
+.item:nth-child(5) {
+  z-index: 1;
+  transform: scale(2);
+}
+/* z-index를 설정 하지 않으면 0이므로, 1만 설정해도 다른 아이템보다 위로 올라온다.
+```
+
+|표준|IE|
+|----|--|
+|display:geid;|display: -ms-grid;|
+|grid-template-rows|-ms-grid-rows|
+|grid-tempalte-columns|-ms-grid-columns|
+|grid-row-start|-ms-grid-row|
+|grid-column-start|-ms-grid-column|
+|grid-row: 1 / span 2; 에서 span 2|-ms-grid-row-sapn: 2|
+|grid-column: 1 / span 2; 에서 span 2|-ms-grid-column-sapn: 2|
+|align-self|-ms-grid-row-align|
+|justify-self|-ms-grid-column-align|
+
+
+
+
+
+
