@@ -4,7 +4,7 @@
 </p>
 <br>
 
-## inline
+## 인라인 요소 (Inline Elements)
 <p>
   display 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 가로로 배치 된다.<br>
   대표적인 inline 엘리먼트로 &lt;span&gt; 이나 &lt;a&gt;, &lt;em&gt; 태그 등을 들 수 있다.
@@ -15,16 +15,43 @@
   왜냐하면 해당 태그가 마크업하고 있는 컨텐츠의 크기 만큼만 공간을 차지하도록 되어 있다.<br>
   또한 margin 과 padding 속성은 좌우 간격만 반영되고, 상하 간격은 반영이 되지 않는다.
 </p>
+
+### 요약
+
+* 한 줄에 여러 개 배치
+* 기본 너비 값은 컨텐츠의 너비 값
+* 크기 값을 가질 수 없음
+* 상하 마진은 가질 수 없음
+
+<code>span</code>, <code>a</code>, <code>small</code>, <code>big</code>, <code>em</code>, <code>u</code>, <code>ins</code>, <code>i</code>, <code>s</code>, <code>del</code>, <code>br</code>, <code>q</code>,<br>
+<code>b</code>, <code>strong</code>, <code>mark</code>, <code>sub</code>, <code>sup</code>, <code>label</code>, <code>map</code>, <code>cite</code>, <code>abbr</code>, <code>time</code>
+
+<p>글자를 개별적으로 꾸미는 서식에 관련된 태그들</p>
 <br>
 
-## block
+## 블록 요소 (Block Elements)
 <p>
   display 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지한다.<br>
   block 엘리먼트는 inline 엘리먼트와 달리 width, height, margin, padding 속성이 모두 반영된다.
 </p>
+
+### 요약
+
+* 한 줄에 한 개만 배치
+* 기본 너비 값은 100%
+* 크기 값을 가질 수 있음
+* 상하좌우 마진 가질 수 있음
+
+<code>div</code>, <code>p</code>, <code>table</code>, <code>blockquote</code>, <code>ul</code>, <code>ol</code>, <code>li</code>, <code>dl</code>, <code>td</code>, <code>dd</code>, <code>table</code>,<br>
+<code>tr</code>, <code>td</code>, <code>th</code>, <code>form</code>, <code>hr</code>, <code>h1~h6</code>, <code>header</code>, <code>nav</code>, <code>footer</code>, <code>main</code>,<br>
+<code>section</code>, <code>article</code>, <code>aside</code>, <code>figure</code>, <code>figcaption</code>, <code>summary</code>, <code>details</code>, <code>address</code>
+
+<p>
+  레이아웃에 관련된 태그들, 목록 태그, 제목 태그, 테이블 관련, 시맨틱(semantic) 태그들
+</p>
 <br>
 
-## inline-block
+## 인라인 블록 (Inline Block Elements) 
 <p>
   display 속성이 inline-block 으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 가로로 배치 된다.<br>
   block 엘리먼트 처럼 width 와 height 속성 지정 및 margin 과 padding 속성의 상하 간격 지정이 가능하다.<br>
@@ -32,6 +59,19 @@
 
 <p>
   대표적인 inline-block 엘리먼트로 &lt;button&gt; 이나 &lt;input&gt;, &lt;select&gt; 태그 등을 들 수 있다.
+</p>
+
+### 요약
+
+* 한 줄에 여러 개 배치
+* 기본 너비 값은 컨텐츠의 너비 값
+* 크기 값을 가질 수 있음
+* 상하좌우 마진 가질 수 있음
+
+<code>img</code>, <code>input</code>, <code>button</code>, <code>textarea</code>, <code>select</code>, <code>Font Icon Tag</code>, <code>video</code>, <code>audio</code>, <code>iframe</code>
+
+<p>
+  이미지를 비롯한 대부분의 폼 요소(label은 인라인요소)
 </p>
 <br>
 
