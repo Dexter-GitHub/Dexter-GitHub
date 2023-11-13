@@ -33,6 +33,7 @@
 ### 자기 자신과 인접해 있는 요소와 수직 중앙을 맞출 경우
 
 <p>
-  vertical-align: 값; transform: translateY(값);
+  <code>vertical-align: 값;</code><br>
+  <code>transform: translateY(값);</code>
 </p>
 <br>
