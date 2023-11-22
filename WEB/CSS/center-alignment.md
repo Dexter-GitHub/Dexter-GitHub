@@ -34,6 +34,10 @@
 
 <p>
   <code>vertical-align: 값;</code><br>
+  <code>vertical-align</code> 속성은 inline 또는 table-cell box 에서의 수직 정렬을 지정한다.<br>  
+</p>
+
+<p>
   <code>transform: translateY(값);</code>
 </p>
 <br>
