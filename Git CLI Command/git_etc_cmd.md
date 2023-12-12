@@ -50,6 +50,23 @@ $ ssh-keygen
 > GitHub 사용시 Setting > SSH and GPG keys에 public key를 등록하여 사용한다.
 </br>
 
+## 커밋 메시지 수정
+<br>
+
+* 아래 명령을 사용하여 가장 최근의 커밋 메시지를 변경할 수 있다.
+
+```
+  $ git commit --amend
+```
+
+* VI 에디터에서 커밋 메시지를 편집하고 커밋을 저장한다.
+* 변경 내용을 GitHub로 푸시할 준비가 되면 아래 명령을 사용하여 이전 커밋을 강제로 푸시한다.
+
+```
+  $ git push --force origin {branch name}
+```
+<br>
+
 ## Window terminal 에서 git bash 사용
 </br>
 
