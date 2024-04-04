@@ -11,7 +11,7 @@
 * GitHub 리모트 저장소 추가
 
 ```
-  $ git add remote origin {HTTPS or SSH URL}
+  $ git remote add origin {HTTPS or SSH URL}
 ```
 <br>
 
