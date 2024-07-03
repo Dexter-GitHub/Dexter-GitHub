@@ -7,8 +7,9 @@
 ### 초기화 및 GitHub repository 연결
 ```
 $ git init
-$ git clone origin {REPO URL} 
+$ git clone {REPO URL} {DIR}
 ```
+📌 DIR은 생략 가능하다.
 </br>
 
 ### Staged area로 관리될 파일(수정 또는 생성) 이동
