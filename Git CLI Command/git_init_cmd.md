@@ -15,7 +15,7 @@
 ```
 <br>
 
-> <code>orgin</code> 키워드는 저장소 이름 정도로 해석될 수 있다.<br>
+> <code>origin</code> 키워드는 저장소 이름 정도로 해석될 수 있다.<br>
 > GitHub에서 default 설정으로 origin 키워드가 많이 사용되며, 다른 키워드로 변경해서 사용할 수 있다.
 
 * GitHub에서 생성된 README.md 파일 또는 초기 설정한 파일을 프로젝트 폴더에 pull 한다.
